@@ -1,7 +1,7 @@
 import logoM from '../.././assets/images/logoForMobile.png';
 import logoL from '../.././assets/images/logoForLaptop.png';
 import logoT from '../.././assets/images/logoForTablet.png';
- import {LogoImg} from './Logo.styled';
+ import s from './Logo.module.css';
 import {useIsMobile, useIsTablet} from '../../hooks/mediaQuery'
 export const Logo = () => {
     const isMobileScreen = useIsMobile();
@@ -9,11 +9,11 @@ export const Logo = () => {
 
     return (
       <div>
-        <a href >
-        {isMobileScreen&&<LogoImg src={logoM} alt="Logo" ></LogoImg>}
-        {IsTabletScreen&&<LogoImg src={logoT} alt="Logo" ></LogoImg>}
-        {!IsTabletScreen&&!isMobileScreen&&<LogoImg src={logoL} alt="Logo" ></LogoImg>}
-        </a>
+        
+        {isMobileScreen&&<img className={s.logoImg} src={logoM} alt="Logo" />}
+        {IsTabletScreen&&<img className={s.logoImg}src={logoT} alt="Logo" />}
+        {!IsTabletScreen&&!isMobileScreen&&<img className={s.logoImg}src={logoL} alt="Logo" />}
+        
       </div>
     );
   };

@@ -1,0 +1,165 @@
+
+
+.container {
+display: flex;
+flex-direction: column;
+padding-top: 32px;
+}
+.titleText {
+margin:0;
+/* font-family: 'Verdana'; */
+
+font-weight: 700;
+font-size: 18px;
+line-height: 1.44;
+/* or 144% */
+color: #212121;
+margin-bottom:32px;
+
+}
+.inputBlock{
+  margin-bottom:32px;
+}
+.inputForm {
+
+width: 240px;
+height: 24px;
+border: 0;
+border-bottom: 1px solid  #E0E0E0;
+
+/* ::placeholder {
+    /* font-family: 'Verdana'; */
+
+font-weight: 700;
+font-size: 14px;
+line-height: 1.21;
+letter-spacing: 0.04em;
+
+color: #9B9FAA; 
+/* } */ 
+}
+
+.inputForm::placeholder {
+  color: #9B9FAA; 
+}
+.inputForm:focus {
+  outline: 0;
+  border-color:#FC842D;
+}
+
+
+
+.button{
+width: 210px;
+height: 43px;
+background: #FC842D;
+box-shadow: 0px 4px 10px rgba(252, 132, 45, 0.5);
+border-radius: 30px;
+border:0;
+
+font-weight: 700;
+font-size: 14px;
+line-height: 1.21;
+letter-spacing: 0.04em;
+
+display: flex;
+align-items: center;
+text-align: center;
+
+justify-content: center;
+color: #FFFFFF;
+margin-left:auto;
+margin-right:auto;
+margin-top:40px;
+}
+
+button:disabled{
+  background: #fc832da0;
+}
+.errorText {
+  color: red;
+  font-size: 10px;
+  margin: 0;
+
+}
+
+
+
+
+.bloodType{
+font-weight: 700;
+font-size: 14px;
+line-height: 17px;
+/* identical to box height */
+
+letter-spacing: 0.04em;
+
+color: #9B9FAA;
+}
+
+.groupRadio{
+display: flex;
+flex-direction: row;
+gap: 24px;
+padding-top:8px;
+
+}
+.inputRadio{
+display: flex;
+flex-direction: row;
+/* gap: 8px; */
+position: relative;
+padding-left: 28px;
+
+}
+
+.inputField {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  /* height: 0;
+  width: 0; */
+
+}
+.textBlood{
+/* align-items: center; */
+height: 20px;
+margin-top: 3px;
+font-weight: 400;
+font-size: 14px;
+line-height: 17px;
+letter-spacing: 0.04em;
+
+color: #9B9FAA;
+}
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  /* background-color: #eee; */
+  border: 1px solid #E0E0E0;
+  border-radius: 50%;
+}
+.inputRadio .inputField:checked ~ .textBlood {
+  color: #FC842D;
+  font-weight: 700;
+}
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+.inputRadio .inputField:checked ~ .checkmark:after {
+  display: block;
+}
+.inputRadio  .checkmark:after {
+  top: 4px;
+	left: 4px;
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	background: #FC842D;
+}

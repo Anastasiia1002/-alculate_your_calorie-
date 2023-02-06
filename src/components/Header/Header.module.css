@@ -1,8 +1,12 @@
-import styled from 'styled-components';
 
-export const Nav = styled.div`
+
+.container {
 display: flex;
 gap: 16px;
+padding: 20px 20px 16px ;
+border-bottom: 2px solid #E0E0E0;
+justify-content: space-between;
+align-items: center;
   /* @media (min-width: 768px) {
     width: 162px;
     height: 44px;
@@ -11,8 +15,8 @@ gap: 16px;
     width: 167px;
     height: 44px;
   } */
-`;
+}
 
-// export const LinkSpan = styled.span`
+/* // export const LinkSpan = styled.span`
 // text-decoration: none;
-// `
+// ` */

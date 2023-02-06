@@ -4,7 +4,7 @@ import {AuthNav} from '../AuthNav/AuthNav'
 
 
 export const Navigation = () => {
-    const  isLoggedIn  = true
+    const  isLoggedIn  = false
 
     return (
       <div>
