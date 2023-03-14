@@ -42,7 +42,7 @@
     border-bottom: 1px solid #E0E0E0;
     margin-bottom: 20px;
 }
-h3 {
+.textKcal_first {
   margin: 0;
   font-family: 'Verdana';
 
@@ -55,13 +55,13 @@ h3 {
   color: #264061;
  
 }
-span{
+.textKcal_second{
     font-size: 16px;
     line-height: 19px;
     color: #264061; 
     margin-left: 10px;
 }
-h4 {
+.recomText {
   margin: 0;
   font-family: 'Verdana';
 
@@ -73,12 +73,12 @@ h4 {
 
   color: #212121;
 }
-ol{
+.list{
     display:flex;
     flex-direction: column;
     gap:10px;
 }
-li {
+.list_item {
   font-family: 'Verdana';
 
   font-weight: 400;

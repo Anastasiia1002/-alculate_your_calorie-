@@ -1,12 +1,12 @@
 import React from 'react';
-import { Formik, Form, Field } from 'formik';
+import { Formik, Form } from 'formik';
 
 import s from './LoginForm.module.css'
 
 export const LoginForm = () => {
     return(
         <div className={s.container}>
-        <h2 className={s.title}>Sign in </h2>
+        <h2 className={s.title}>SIGN IN </h2>
         <div>
         <Formik
         initialValues={{
@@ -14,7 +14,7 @@ export const LoginForm = () => {
           password: '',
         }}
         onSubmit={(values, { setSubmitting }) => {
-      
+      console.log(values)
        
         }}
         // validationSchema={validationsSchema}
